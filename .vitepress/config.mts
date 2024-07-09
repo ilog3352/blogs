@@ -5,6 +5,7 @@ export default defineConfig({
     title: "My Awesome Project",
     description: "A VitePress Site",
     outDir: "docs", // 打包文件夹
+    base: "/docs/",
     themeConfig: {
         // https://vitepress.dev/reference/default-theme-config
         // 顶部导航
