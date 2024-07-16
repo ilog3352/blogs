@@ -1,24 +1,20 @@
 ---
-# https://vitepress.dev/reference/default-theme-home-page
 layout: home
 hero:   
-  name: "前端总结"
-  text: "A VitePress Site"
-  tagline: My great project tagline
+  name: ""
+  text: ""
+  tagline: ""
   actions:
     - theme: brand
-      text: Markdown Examples
-      link: /markdown-examples
-    - theme: alt
-      text: API Examples
-      link: /api-examples
+      text: 知识汇总
+      link: /
 
 features:
-  - title: Feature A
+  - title: 前端面试题
     details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
-  - title: Feature B
+  - title: 技术文档
     details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
-  - title: Feature C
+  - title: 遇到的问题
     details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
 ---
 
