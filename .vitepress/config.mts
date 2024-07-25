@@ -2,8 +2,8 @@ import { defineConfig } from 'vitepress'
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
-    title: "",
-    description: "A VitePress Site",
+    title: "zhangshuo blog",
+    description: "",
     outDir: "docs", // 打包文件夹
     base: "/blogs/",
     themeConfig: {
@@ -11,59 +11,52 @@ export default defineConfig({
         // 顶部导航
         nav: [
             { text: '主页', link: '/' },
-            { text: '前端面试题', link: '/interview/network/url' },
+            { text: '前端面试题', link: '/interview/network/跨域' },
             { text: '知识点', link: '/knowledge-point/nginx' }
         ],
         // 左侧导航
-        sidebar: [
-            {
-                text: 'HTML',
-                items: [
+        sidebar: {
+            "/interview/": [
+                {
+                    text: 'project',
+                    items: [
+                        { text: 'vite webpack区别', link: '/interview/project/vite跟webpack区别' },
+                    ]
+                },
+                {
+                    text: 'Network',
+                    items: [
+                        { text: '跨域', link: '/interview/network/跨域' },
+                    ]
+                }, {
+                    text: 'other',
+                    items: [
+                        { text: '埋点', link: '/interview/other/埋点' },
+                    ]
+                }
+            ],
+            "/knowledge-point/": [
+                {
+                    text: '知识点',
+                    items: [
+                        { text: 'nginx', link: '/knowledge-point/nginx' },
+                        { text: 'WebRTC', link: '/knowledge-point/WebRTC' },
+                        { text: 'ci/cd', link: '/knowledge-point/cicd' }
+                    ]
+                },
+            ]
+        },
 
-                ]
-            },
-            {
-                text: 'CSS',
-                items: [
-
-                ]
-            },
-            {
-                text: 'Javascript',
-                items: [
-
-                ]
-            },
-            {
-                text: 'TypeScript',
-                items: [
-
-                ]
-            },
-            {
-                text: 'Vue',
-                items: [
-
-                ]
-            },
-            {
-                text: 'Network',
-                items: [
-                    { text: '输入url浏览器发生了什么', link: '/interview/network/url' }
-                ]
-            }
-        ],
-
-        // // 上一页 下一页
-        // docFooter: {
-        //     prev: '上一页',
-        //     next: '下一页'
-        // },
+        // 上一页 下一页
+        docFooter: {
+            prev: '上一页',
+            next: '下一页'
+        },
         // 最后更改时间 配合git
         lastUpdated: {
             text: '最后修改时间',
             formatOptions: {
-                dateStyle: 'full',
+                dateStyle: 'short',
                 timeStyle: 'short'
             }
         },

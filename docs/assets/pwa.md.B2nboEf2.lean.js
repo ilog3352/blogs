@@ -1,1 +1,0 @@
-import{_ as s,c as i,o as a,a4 as n}from"./chunks/framework.BmPFG-Ev.js";const c=JSON.parse('{"title":"","description":"","frontmatter":{},"headers":[],"relativePath":"pwa.md","filePath":"pwa.md","lastUpdated":1721121559000}'),l={name:"pwa.md"},t=n("",8),p=[t];function e(h,k,E,r,d,o){return a(),i("div",null,p)}const y=s(l,[["render",e]]);export{c as __pageData,y as default};

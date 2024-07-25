@@ -6,6 +6,57 @@
 5. 查看版本 ./nginx -v
 6. 指定配置文件 ./nginx -c conf/nginx.conf
 
+## 负载均衡
+1. 默认是轮询的方式
+2. 权重分配 `weight` = 3
+3. 灾备技术 backup 目标服务器会作为备用服务器
+
+用法
+
+```conf
+http {
+    upstream aaa {  #这里的aaa替换ip
+        server 89.0.142.86:80 weight=3;
+        server 89.0.142.86:80 weight=2;
+        server 89.0.142.86:80 weight=1 backup;
+    }
+    server {
+        location / {
+            proxy_pass http://aaa;
+        }
+    }
+}
+
+```
+## 配置https
+下载openssl 配置环境变量
+
+1. 先生成私钥在终端中输入 生成一个private.key文件
+```sh
+openssl genpkey -algorithm RSA -out private.key -pkeyopt rsa_keygen_bits:2048
+```
+
+2. 生成证书请求文件CSR  临时文件 用后可删
+```sh
+openssl req -new -key private.key -out server.csr -subj "/C=CN/ST=GD/L=SZ/O=IT/CN=www.localhost.com"
+```
+3. 通过csr生成证书
+```sh
+openssl x509 -req -in server.csr -signkey private.key -out server.crt
+```
+注:每个server都是独立的 配置的跨域图片等都需要在配置一次 在文件最后有注释的https配置 打开注释 替换路径即可
+
+## 限速技术
+限制一分钟接口多少个 limit为自定义变量  限制内存为10兆 每秒发送5个请求
+```conf
+limit_req_zone $binary_remote_addr zone=limit:10m rate=5r/s
+```
+## 缓存技术
+```conf
+proxy_cache_path C:/nginx_cache levels=1:2 keys_zone=cachename:10m max_size=1g inactive=60m;
+```
+
+
 ## nginx 配置文件讲解
 ``` conf
 
@@ -66,9 +117,10 @@ http {
 
         #access_log  logs/host.access.log  main;
         location / {    # 代理 / 代理的路径 
+            proxy_pass http://aaa;
             root html;  #html的跟目录
             index index.html index.htm; #文件
-            try_files $uri $uri/ /index.html; #如果请求的资源不存在，则尝试回退到index.html
+            try_files $uri $uri/ /index.html; #如果请求的资源不存在，则尝试回退到index.html 404
         }
         #处理跨域
         location /api {         #限制的5 短时间可以10  nodelay没延迟  超过就503
