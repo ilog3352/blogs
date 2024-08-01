@@ -1,7 +1,7 @@
 ---
 layout: home
 hero:   
-  name: "interview and knowledge"
+  name: ""
   text: ""
   tagline: ""
 #   actions:
@@ -16,7 +16,8 @@ features:
   - title: 技术文档
     details: 包括cicd、nginx、nodejs
     link: /knowledge-point/nginx
-#   - title: 遇到的问题
-#     details: 暂无
+  - title: 遇到的问题
+    details: 
+    link: /bug/动态路由刷新丢失
 ---
 

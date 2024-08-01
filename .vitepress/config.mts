@@ -12,14 +12,29 @@ export default defineConfig({
         nav: [
             { text: '主页', link: '/' },
             { text: '前端面试题', link: '/interview/network/跨域' },
-            { text: '知识点', link: '/knowledge-point/nginx' }
+            { text: '知识点', link: '/knowledge/nginx' },
+            { text: 'bug', link: '/bug/动态路由刷新丢失' }
         ],
         // 左侧导航
         sidebar: {
             "/interview/": [
                 {
+                    text: 'javascript',
+                    items: [
+                        { text: '原型链', link: '/interview/javascript/yuanxinglian' },
+                    ]
+                },
+                {
+                    text: 'vue',
+                    items: [
+                        { text: 'diff算法', link: '/interview/vue/diff' },
+                        { text: 'vue2 vue3 区别', link: '/interview/vue/vue2 vue3 区别' },
+                    ]
+                },
+                {
                     text: 'project',
                     items: [
+                        { text: 'webpack', link: '/interview/project/webpack' },
                         { text: 'vite webpack区别', link: '/interview/project/vite跟webpack区别' },
                     ]
                 },
@@ -35,13 +50,23 @@ export default defineConfig({
                     ]
                 }
             ],
-            "/knowledge-point/": [
+            "/knowledge/": [
                 {
                     text: '知识点',
                     items: [
-                        { text: 'nginx', link: '/knowledge-point/nginx' },
-                        { text: 'WebRTC', link: '/knowledge-point/WebRTC' },
-                        { text: 'ci/cd', link: '/knowledge-point/cicd' }
+                        { text: 'nginx', link: '/knowledge/nginx' },
+                        { text: 'WebRTC', link: '/knowledge/WebRTC' },
+                        { text: 'ci/cd', link: '/knowledge/cicd' },
+                        { text: 'typescript', link: '/knowledge/TypeScript' },
+                        { text: 'git命令', link: '/knowledge/git' },
+                    ]
+                },
+            ],
+            "/bug/": [
+                {
+                    text: '遇到的问题',
+                    items: [
+                        { text: '动态路由刷新丢失', link: '/bug/动态路由刷新丢失' },
                     ]
                 },
             ]
