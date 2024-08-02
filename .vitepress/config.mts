@@ -59,6 +59,7 @@ export default defineConfig({
                         { text: 'ci/cd', link: '/knowledge/cicd' },
                         { text: 'typescript', link: '/knowledge/TypeScript' },
                         { text: 'git命令', link: '/knowledge/git' },
+                        { text: 'webpack', link: '/knowledge/webpack' },
                     ]
                 },
             ],

@@ -475,4 +475,11 @@ const fn = (num:any):num is number=> typeof num === 'number'
 ## interface type 区别
 不同点:interface 可以重名 type 不能
 把interface 变量 赋给 Record 变量会报错  需要索引签名 因为 不明确interface 的属性 interface 会声明合并 type 不会
-## 装饰器
+## declare 声明
+```ts
+举例为png后缀
+declare module '*.png' {
+    const value:string;
+    export default value;
+}
+```
