@@ -1,0 +1,1 @@
+import{_ as e,c as a,o as t,a2 as o}from"./chunks/framework.BLHWSx9w.js";const f=JSON.parse('{"title":"","description":"","frontmatter":{},"headers":[],"relativePath":"knowledge/埋点.md","filePath":"knowledge/埋点.md"}'),i={name:"knowledge/埋点.md"},r=o("",10),n=[r];function l(_,s,p,c,d,h){return t(),a("div",null,n)}const m=e(i,[["render",l]]);export{f as __pageData,m as default};
