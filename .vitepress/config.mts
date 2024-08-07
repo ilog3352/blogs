@@ -5,7 +5,7 @@ export default defineConfig({
     title: "前端知识汇总",
     description: "",
     outDir: "docs", // 打包文件夹
-    base: "",
+    base: "/blogs/",
     themeConfig: {
         // https://vitepress.dev/reference/default-theme-config
         // 顶部导航

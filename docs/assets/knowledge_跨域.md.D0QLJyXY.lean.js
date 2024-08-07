@@ -1,0 +1,1 @@
+import{_ as a,c as e,o,a2 as t}from"./chunks/framework.Da5Pf1R-.js";const u=JSON.parse('{"title":"","description":"","frontmatter":{},"headers":[],"relativePath":"knowledge/跨域.md","filePath":"knowledge/跨域.md"}'),i={name:"knowledge/跨域.md"},n=t("",9),l=[n];function p(r,c,s,_,d,h){return o(),e("div",null,l)}const f=a(i,[["render",p]]);export{u as __pageData,f as default};

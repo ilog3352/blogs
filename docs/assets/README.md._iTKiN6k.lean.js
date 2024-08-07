@@ -1,1 +1,0 @@
-import{_ as s,c as i,o as a,a2 as e}from"./chunks/framework.BLHWSx9w.js";const u=JSON.parse('{"title":"","description":"","frontmatter":{},"headers":[],"relativePath":"README.md","filePath":"README.md"}'),t={name:"README.md"},l=e("",6),n=[l];function r(h,p,o,d,c,k){return a(),i("div",null,n)}const F=s(t,[["render",r]]);export{u as __pageData,F as default};
