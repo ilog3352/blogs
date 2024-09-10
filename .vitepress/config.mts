@@ -18,6 +18,8 @@ export default defineConfig({
                 {
                     text: '知识点',
                     items: [
+                        { text: 'node', link: '/knowledge/node' },
+                        { text: 'react', link: '/knowledge/react' },
                         { text: 'nginx', link: '/knowledge/nginx' },
                         { text: 'WebRTC', link: '/knowledge/WebRTC' },
                         { text: 'ci/cd', link: '/knowledge/cicd' },
