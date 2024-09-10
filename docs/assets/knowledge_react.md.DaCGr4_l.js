@@ -1,0 +1,1 @@
+import{_ as e,c as t,o as a}from"./chunks/framework.Da5Pf1R-.js";const l=JSON.parse('{"title":"","description":"","frontmatter":{},"headers":[],"relativePath":"knowledge/react.md","filePath":"knowledge/react.md"}'),r={name:"knowledge/react.md"};function o(c,n,s,d,p,_){return a(),t("div")}const m=e(r,[["render",o]]);export{l as __pageData,m as default};
