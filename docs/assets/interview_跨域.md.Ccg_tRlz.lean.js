@@ -1,0 +1,1 @@
+import{_ as a,c as t,o as e,a2 as o}from"./chunks/framework.Da5Pf1R-.js";const u=JSON.parse('{"title":"","description":"","frontmatter":{},"headers":[],"relativePath":"interview/跨域.md","filePath":"interview/跨域.md"}'),i={name:"interview/跨域.md"},n=o("",9),l=[n];function r(p,c,s,_,d,h){return e(),t("div",null,l)}const f=a(i,[["render",r]]);export{u as __pageData,f as default};

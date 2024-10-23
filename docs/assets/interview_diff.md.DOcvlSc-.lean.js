@@ -1,0 +1,1 @@
+import{_ as e,c as i,o as t,a2 as a}from"./chunks/framework.Da5Pf1R-.js";const m=JSON.parse('{"title":"","description":"","frontmatter":{},"headers":[],"relativePath":"interview/diff.md","filePath":"interview/diff.md"}'),l={name:"interview/diff.md"},o=a("",5),r=[o];function _(f,d,n,s,c,p){return t(),i("div",null,r)}const k=e(l,[["render",_]]);export{m as __pageData,k as default};

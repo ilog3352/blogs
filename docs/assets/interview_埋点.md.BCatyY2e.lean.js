@@ -1,0 +1,1 @@
+import{_ as e,c as a,o as t,a2 as i}from"./chunks/framework.Da5Pf1R-.js";const f=JSON.parse('{"title":"","description":"","frontmatter":{},"headers":[],"relativePath":"interview/埋点.md","filePath":"interview/埋点.md"}'),r={name:"interview/埋点.md"},o=i("",10),n=[o];function _(l,s,p,c,d,h){return t(),a("div",null,n)}const m=e(r,[["render",_]]);export{f as __pageData,m as default};
