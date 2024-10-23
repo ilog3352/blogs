@@ -11,6 +11,7 @@ export default defineConfig({
         // 顶部导航
         nav: [
             { text: '知识点', link: '/knowledge/nginx' },
+            { text: '面试题', link: '/interview/yuanxinglian' },
         ],
         // 左侧导航
         sidebar: {
@@ -26,9 +27,20 @@ export default defineConfig({
                         { text: 'typescript', link: '/knowledge/TypeScript' },
                         { text: 'git命令', link: '/knowledge/git' },
                         { text: 'webpack', link: '/knowledge/webpack' },
-                        { text: '原型链', link: '/knowledge/yuanxinglian' },
-                        { text: '埋点', link: '/knowledge/埋点' },
-                        { text: '跨域', link: '/knowledge/跨域' },
+
+                    ]
+                },
+            ],
+            "/interview/": [
+                {
+                    text: '面试题',
+                    items: [
+                        { text: '原型链', link: '/interview/yuanxinglian' },
+                        { text: '跨域', link: '/interview/跨域' },
+                        { text: '埋点', link: '/interview/埋点' },
+                        { text: 'diff算法', link: '/interview/diff' },
+                        { text: 'for of', link: '/interview/forof' },
+                        { text: 'vite跟webpack区别', link: '/interview/vite跟webpack区别' },
                     ]
                 },
             ],
