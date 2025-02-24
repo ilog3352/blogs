@@ -1,0 +1,1 @@
+import{_ as t,c as e,o as r,a2 as p}from"./chunks/framework.Da5Pf1R-.js";const m=JSON.parse('{"title":"","description":"","frontmatter":{},"headers":[],"relativePath":"knowledge/git.md","filePath":"knowledge/git.md"}'),s={name:"knowledge/git.md"},a=p("",25),i=[a];function n(o,h,l,g,c,d){return r(),e("div",null,i)}const f=t(s,[["render",n]]);export{m as __pageData,f as default};
