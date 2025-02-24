@@ -122,3 +122,12 @@ const result = hash.digest('hex')   // 加密了hello 输出16进制
 // 读取文件内容 转换为md5 上传服务端 后端拿到文件内容 生成md5 匹配前后端md5 验证文件完整性
 
 ```
+## 编写脚手架
+## markdown转html
+## zlib压缩 gzip压缩文件 deflte压缩http传输
+## http
+1. 动静分离（缓存）
+2. 邮件服务
+3. 反向代理
+## express 
+1. 防盗链

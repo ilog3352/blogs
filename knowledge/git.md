@@ -47,3 +47,9 @@ npm config delete registry
 设置http/https代理或镜像
 
 设置命令与npm相同，只需要把命令里的npm换成pnpm
+
+## 两行命令更新powershell
+```sh
+winget search Microsoft.PowerShell
+winget install --id Microsoft.Powershell --source winget
+```
