@@ -1,9 +1,0 @@
-import{_ as a,c as i,o as n,ag as e}from"./chunks/framework.DuJzXpJq.js";const c=JSON.parse('{"title":"","description":"","frontmatter":{},"headers":[],"relativePath":"node/nodejs/api/全局变量.md","filePath":"node/nodejs/api/全局变量.md","lastUpdated":null}'),t={name:"node/nodejs/api/全局变量.md"};function l(p,s,h,d,k,r){return n(),i("div",null,s[0]||(s[0]=[e(`<h2 id="定义全局变量" tabindex="-1">定义全局变量 <a class="header-anchor" href="#定义全局变量" aria-label="Permalink to &quot;定义全局变量&quot;">​</a></h2><div class="language-js vp-adaptive-theme"><button title="Copy Code" class="copy"></button><span class="lang">js</span><pre class="shiki shiki-themes github-light github-dark vp-code" tabindex="0"><code><span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">global.a </span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583;">=</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF;"> 1</span></span>
-<span class="line"><span style="--shiki-light:#6A737D;--shiki-dark:#6A737D;">// ECMAScript 2020 新增 globalThis 兼容浏览器和nodejs</span></span>
-<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">node环境 无法使用 </span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF;">DOM</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;"> 和 </span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF;">BOM</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;"> </span></span>
-<span class="line"></span>
-<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">只能在cjs中使用</span></span>
-<span class="line"></span>
-<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">__dirname 当前文件所在目录 不包括当前文件名</span></span>
-<span class="line"></span>
-<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">__filename 当前文件所在目录 包括当前文件名</span></span></code></pre></div>`,2)]))}const E=a(t,[["render",l]]);export{c as __pageData,E as default};

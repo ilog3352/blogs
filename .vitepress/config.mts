@@ -5,7 +5,7 @@ export default defineConfig({
     title: "西兰花笔记",
     description: "经典，恒古不变",
     head: [
-        ['link', { rel: 'icon', href: '/favicon.png', type: 'image/png' }]
+        ['link', { rel: 'icon', href: '/blogs/favicon.png', type: 'image/png' }]
     ],
     outDir: 'docs',
     base: "/blogs/",
@@ -36,7 +36,7 @@ export default defineConfig({
             '/node/nodejs/': [
                 {
                     text: 'NodeJs基础',
-                    collapsed: true,
+                    // collapsed: true,
                     items: [
                         { text: 'node简介', link: '/node/nodejs/base/nodeBase' },
                         { text: 'npm', link: '/node/nodejs/base/npm' },
@@ -46,14 +46,14 @@ export default defineConfig({
                 },
                 {
                     text: 'NodeJsAPI',
-                    collapsed: true,
+                    // collapsed: true,
                     items: [
                         { text: '全局变量', link: '/node/nodejs/api/全局变量' },
                         { text: '内置模块', link: '/node/nodejs/api/内置模块' },
                     ]
                 }, {
                     text: 'NodeJs进阶',
-                    collapsed: true,
+                    // collapsed: true,
                     items: [
                         { text: 'crypto', link: '/node/nodejs/Advanced/crypto' },
                         { text: 'ffmpeg', link: '/node/nodejs/Advanced/ffmpeg' },
@@ -61,6 +61,10 @@ export default defineConfig({
                         { text: '命令行工具', link: '/node/nodejs/Advanced/cmd' },
                         { text: 'zlib压缩', link: '/node/nodejs/Advanced/zlib' },
                         { text: '定时任务', link: '/node/nodejs/Advanced/定时任务' },
+                        { text: 'http缓存', link: '/node/nodejs/Advanced/httpcache' },
+                        { text: 'puppeteer', link: '/node/nodejs/Advanced/puppeteer' },
+                        { text: 'socket', link: '/node/nodejs/Advanced/socket' },
+                        { text: '大文件上传', link: '/node/nodejs/Advanced/bigFileUpload' },
                     ]
                 }
             ],
