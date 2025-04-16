@@ -29,11 +29,31 @@ export default defineConfig({
                     { text: 'NodeJs', link: '/node/nodejs/base/nodeBase' },
                     { text: 'Express', link: '/node/express/expressBase' },
                 ]
+            }, {
+                text: 'JavaScript', link: '/javascript/bindcall'
             }
         ],
 
         sidebar: {
             '/node/nodejs/': [
+                {
+                    text: 'NodeJs进阶',
+                    // collapsed: true,
+                    items: [
+                        { text: 'crypto', link: '/node/nodejs/Advanced/crypto' },
+                        { text: 'ffmpeg', link: '/node/nodejs/Advanced/ffmpeg' },
+                        { text: 'pngquant', link: '/node/nodejs/Advanced/pngquant' },
+                        { text: '命令行工具', link: '/node/nodejs/Advanced/cmd' },
+                        { text: 'zlib压缩', link: '/node/nodejs/Advanced/zlib' },
+                        { text: '定时任务', link: '/node/nodejs/Advanced/定时任务' },
+                        { text: 'puppeteer', link: '/node/nodejs/Advanced/puppeteer' },
+                        { text: 'socket', link: '/node/nodejs/Advanced/socket' },
+                        { text: '大文件上传', link: '/node/nodejs/Advanced/bigFileUpload' },
+                        { text: '文件流下载', link: '/node/nodejs/Advanced/download' },
+                        { text: 'http缓存', link: '/node/nodejs/Advanced/httpcache' },
+                        { text: '登录系列', link: '/node/nodejs/Advanced/login' },
+                    ]
+                },
                 {
                     text: 'NodeJs基础',
                     // collapsed: true,
@@ -51,22 +71,7 @@ export default defineConfig({
                         { text: '全局变量', link: '/node/nodejs/api/全局变量' },
                         { text: '内置模块', link: '/node/nodejs/api/内置模块' },
                     ]
-                }, {
-                    text: 'NodeJs进阶',
-                    // collapsed: true,
-                    items: [
-                        { text: 'crypto', link: '/node/nodejs/Advanced/crypto' },
-                        { text: 'ffmpeg', link: '/node/nodejs/Advanced/ffmpeg' },
-                        { text: 'pngquant', link: '/node/nodejs/Advanced/pngquant' },
-                        { text: '命令行工具', link: '/node/nodejs/Advanced/cmd' },
-                        { text: 'zlib压缩', link: '/node/nodejs/Advanced/zlib' },
-                        { text: '定时任务', link: '/node/nodejs/Advanced/定时任务' },
-                        { text: 'http缓存', link: '/node/nodejs/Advanced/httpcache' },
-                        { text: 'puppeteer', link: '/node/nodejs/Advanced/puppeteer' },
-                        { text: 'socket', link: '/node/nodejs/Advanced/socket' },
-                        { text: '大文件上传', link: '/node/nodejs/Advanced/bigFileUpload' },
-                    ]
-                }
+                },
             ],
             '/node/express/': [
                 {
@@ -75,6 +80,11 @@ export default defineConfig({
                         { text: '基本使用', link: '/node/express/expressBase' },
                         { text: 'express防盗链', link: '' },
                     ]
+                }
+            ],
+            '/javascript/': [
+                {
+                    text: 'bind call apply', link: '/javascript/bindcall'
                 }
             ]
         },
