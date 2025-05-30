@@ -31,6 +31,8 @@ export default defineConfig({
                 ]
             }, {
                 text: 'JavaScript', link: '/javascript/bindcall'
+            }, {
+                text: 'React', link: '/react/reactBase'
             }
         ],
 
@@ -85,6 +87,11 @@ export default defineConfig({
             '/javascript/': [
                 {
                     text: 'bind call apply', link: '/javascript/bindcall'
+                }
+            ],
+            '/react/': [
+                {
+                    text: 'Tsx基础语法', link: '/react/tsxBase'
                 }
             ]
         },
