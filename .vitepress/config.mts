@@ -2,7 +2,7 @@ import { defineConfig } from 'vitepress'
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
-    title: "西兰花笔记",
+    title: "前端笔记",
     description: "经典，恒古不变",
     head: [
         ['link', { rel: 'icon', href: '/blogs/favicon.png', type: 'image/png' }]
@@ -22,23 +22,32 @@ export default defineConfig({
             },
         },
         nav: [
-            { text: '主页', link: '/' },
+            { text: '首页', link: '/' },
             {
                 text: 'NodeJs',
                 items: [
                     { text: 'NodeJs', link: '/node/nodejs/base/nodeBase' },
-                    { text: 'Express', link: '/node/express/expressBase' },
+                    { text: 'nestjs', link: '/node/nestjs/base' }
                 ]
             }, {
-                text: 'JavaScript', link: '/javascript/bindcall'
+                text: 'React', link: '/react/hooks/useState'
             }, {
-                text: 'React', link: '/react/reactBase'
+                text: 'everything', link: '/interview/vue/vue2和vue3的区别'
             }
         ],
 
         sidebar: {
             '/node/nodejs/': [
                 {
+                    text: 'NodeJs基础',
+                    // collapsed: true,
+                    items: [
+                        { text: 'node简介', link: '/node/nodejs/base/nodeBase' },
+                        { text: 'npm', link: '/node/nodejs/base/npm' },
+                        { text: 'npx', link: '/node/nodejs/base/npx' },
+                        { text: '模块化', link: '/node/nodejs/base/模块化' },
+                    ]
+                }, {
                     text: 'NodeJs进阶',
                     // collapsed: true,
                     items: [
@@ -55,18 +64,7 @@ export default defineConfig({
                         { text: 'http缓存', link: '/node/nodejs/Advanced/httpcache' },
                         { text: '登录系列', link: '/node/nodejs/Advanced/login' },
                     ]
-                },
-                {
-                    text: 'NodeJs基础',
-                    // collapsed: true,
-                    items: [
-                        { text: 'node简介', link: '/node/nodejs/base/nodeBase' },
-                        { text: 'npm', link: '/node/nodejs/base/npm' },
-                        { text: 'npx', link: '/node/nodejs/base/npx' },
-                        { text: '模块化', link: '/node/nodejs/base/模块化' },
-                    ]
-                },
-                {
+                }, {
                     text: 'NodeJsAPI',
                     // collapsed: true,
                     items: [
@@ -75,27 +73,44 @@ export default defineConfig({
                     ]
                 },
             ],
-            '/node/express/': [
-                {
-                    text: 'Express',
-                    items: [
-                        { text: '基本使用', link: '/node/express/expressBase' },
-                        { text: 'express防盗链', link: '' },
-                    ]
-                }
-            ],
-            '/javascript/': [
-                {
-                    text: 'bind call apply', link: '/javascript/bindcall'
-                }
+            '/node/nestjs/': [
+                { text: 'nest介绍', link: 'node/nestjs/base' },
+                { text: '常用命令', link: 'node/nestjs/order' },
+                { text: 'prisma', link: 'node/nestjs/prisma' }
             ],
             '/react/': [
                 {
-                    text: 'Tsx基础语法', link: '/react/tsxBase'
+                    text: 'Hooks',
+                    items: [
+                        { text: 'useState', link: 'react/hooks/useState' },
+                        { text: 'useReducer', link: 'react/hooks/useReducer' },
+                        { text: 'useEffect', link: 'react/hooks/useEffect' },
+                    ]
+                }, {
+                    text: "Router",
+                    items: [
+                        { text: 'react-router', link: 'react/router/react-router' },
+                    ]
+                }
+            ],
+            'interview': [
+                {
+                    text: 'vue',
+                    items: [
+                        { text: 'vue2和vue3的区别', link: '/interview/vue/vue2和vue3的区别' },
+                        { text: 'diff算法', link: '/interview/vue/diff' },
+                        { text: '响应式原理', link: '/interview/vue/响应式原理' },
+                        { text: '虚拟dom', link: '/interview/vue/虚拟dom' },
+
+                    ]
+                },
+                {
+                    text: 'react',
+                    items: [
+                    ]
                 }
             ]
         },
-
         socialLinks: [
             { icon: 'github', link: 'https://github.com/vuejs/vitepress' }
         ],
