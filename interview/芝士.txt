@@ -1,0 +1,135 @@
+埋点 前端监控
+熟练nodejs以及实现ci/cd自动化部署
+husky
+,熟悉CI/CD自动化部署,前端监控,埋点;
+webpack性能优化
+swc技术 性能优化
+optimization 代码分报
+cache 打包缓存
+externals cdn
+
+
+埋点的意义
+图像占位符 https://via.placeholder.com/150
+中断ajax xhr.abort() 回调:onabort
+
+rest clint 插件
+inquirer 做命令行交互的库 
+
+
+
+101.201.100.55
+netstat -ntlp  查看nginx服务是否被分配了端口
+sudo firewall-cmd --list-ports 查看防火墙开放了哪些端口
+ps -ef | grep nginx
+systemctl status nginx
+
+优化***，
+提取公共代码
+提升扩展性，
+提升性能，
+加必要的注释，
+书写**规范
+总结经验
+学习****
+对比***性能，积累***
+ 
+vue3.5 useId，useTemplateRef,直接结构props是响应式的
+
+
+IntersectionObserver懒加载
+
+预渲染 可以解决 打包多页面，每个页面单独生成tdk，有接口数据 prerender-spa-plugin
+	缺点：无法配置动态路由，如果tdk来自接口，无法配置，适合一个项目就几个页面做seo
+
+webpack
+1.entry 入口
+2.output 出口
+3.loader 
+4.plugins
+5.mode  模式 （开发 生产
+
+单一职责 一个函数只做一个事情
+
+
+二次封装过哪些组件
+scss postcss unocss
+vueuse lodash
+webpack vite rollup esbuild
+微前端 网络 nginx electron 
+
+微前端：
+	跨团队合作
+借鉴微服务的理念
+
+nginx
+代理跨域： proxy_pass
+
+location / {
+   root   html;
+   index  index.html index.htm;
+   proxy_pass http://bilibili.com;
+}
+
+刷新404：try_files $uri $uri/ /index.html
+
+使用js实现轮播图，可移动的模态框
+
+sticky的top会找父级元素第一个设置overflow的元素，都没有设置就根据视口，父元素离开视口他也走
+
+零宽字符
+
+
+对象转基本类型先调用valueOf	在调用toString()
+
+class 私有字段 跟私有方法 加#
+
+flex-basis：0 设置flex1的时候加这个可以不考虑宽度；flex：1 0 0 ；
+
+函数.apply(参数1,[1,2]) => 参数1.函数(1,2)
+
+展示组件 容器组件
+
+JWT 明文存储
+
+vue3通过getCurrentInstance()拿到组件实例
+
+nginx常用命令 nginx -s stop -v
+	     nginx -s quit
+	     nginx -s reload
+负载均衡
+upstream node{	默认轮询		权重		超时时间
+	server 127.0.0.1:9001 weight=3;	file_timeout=60
+	server 127.0.0.1:9002 weight=2;
+	server 127.0.0.1:9003 weight=1;backup	备用超时了走这个
+}
+localhost / {
+	proxy_pass http://node
+}
+
+pm2 start index.js
+pm2 log
+pm2 restart all
+delete
+
+git flow工作流
+
+
+浏览器是怎么渲染页面的
+
+html解析器将 标签 解析为 dom树
+从根节点开始绘制成ast抽象语法树
+css渲染引擎将css进行一个格式化就是将em啥的转成px，也就是cssom的一个过程
+然后就是绘制，会触发重排和重绘，经过重绘重排后就是解析js
+v8是c++写的解析js大概就是转一个ast，然后经过字节码转一下各个系统的兼容性，然后经过解释器v8用的jit解析器，就是一边解析一边执行，编译完成就是0101010001，
+
+
+
+进程	一个主进程	一个浏览器
+线程	多个标签页
+
+console.log 点开对象会实时更新现在的数据
+
+
+
+

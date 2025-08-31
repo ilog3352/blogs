@@ -103,10 +103,12 @@ export default defineConfig({
                         { text: '虚拟dom', link: '/interview/vue/虚拟dom' },
 
                     ]
-                },
-                {
-                    text: 'react',
+                }, {
+                    text: '性能优化',
                     items: [
+                        { text: '图片优化', link: '/interview/性能优化/图片优化' },
+                        { text: 'defer和async区别', link: '/interview/性能优化/deferasync' },
+                        { text: '其他优化', link: '/interview/性能优化/其他优化' },
                     ]
                 }
             ]
