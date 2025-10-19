@@ -32,7 +32,7 @@ export default defineConfig({
             }, {
                 text: 'React', link: '/react/hooks/useState'
             }, {
-                text: 'everything', link: '/interview/vue/vue2和vue3的区别'
+                text: 'everything', link: '/everything/vue/vue2和vue3的区别'
             }
         ],
 
@@ -87,34 +87,47 @@ export default defineConfig({
                         { text: 'useEffect', link: 'react/hooks/useEffect' },
                     ]
                 }, {
-                    text: "Router",
+                    text: "工具",
                     items: [
-                        { text: 'react-router', link: 'react/router/react-router' },
+                        { text: 'babel', link: 'react/tools/babel' },
+                        { text: 'swc', link: 'react/tools/swc' },
                     ]
                 }
             ],
-            'interview': [
+            'everything': [
                 {
                     text: 'vue',
                     items: [
-                        { text: 'vue2和vue3的区别', link: '/interview/vue/vue2和vue3的区别' },
-                        { text: 'diff算法', link: '/interview/vue/diff' },
-                        { text: '响应式原理', link: '/interview/vue/响应式原理' },
-                        { text: '虚拟dom', link: '/interview/vue/虚拟dom' },
+                        { text: 'vue2和vue3的区别', link: '/everything/vue/vue2和vue3的区别' },
+                        { text: 'diff算法', link: '/everything/vue/diff' },
+                        { text: '响应式原理', link: '/everything/vue/响应式原理' },
+                        { text: '虚拟dom', link: '/everything/vue/虚拟dom' },
 
                     ]
                 }, {
                     text: '性能优化',
                     items: [
-                        { text: '图片优化', link: '/interview/性能优化/图片优化' },
-                        { text: 'defer和async区别', link: '/interview/性能优化/deferasync' },
-                        { text: '其他优化', link: '/interview/性能优化/其他优化' },
+                        { text: '图片优化', link: '/everything/性能优化/图片优化' },
+                        { text: 'defer和async区别', link: '/everything/性能优化/deferasync' },
+                        { text: '其他优化', link: '/everything/性能优化/其他优化' },
+                    ]
+                }, {
+                    text: 'js',
+                    items: [
+                        { text: '闭包', link: '/everything/js/闭包' },
+                        { text: '原型链', link: '/everything/js/原型链' },
+                    ]
+                }, {
+                    text: '其他',
+                    items: [
+                        { text: '微前端', link: '/everything/other/微前端' },
+                        { text: 'threejs', link: '/everything/other/threejs' },
                     ]
                 }
             ]
         },
         socialLinks: [
-            { icon: 'github', link: 'https://github.com/vuejs/vitepress' }
+            // { icon: 'github', link: 'https://github.com/vuejs/vitepress' }
         ],
         outline: {
             level: [2, 3],

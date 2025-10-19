@@ -1,1 +1,0 @@
-import{_ as e,c as t,o as a}from"./chunks/framework.DuJzXpJq.js";const i=JSON.parse('{"title":"","description":"","frontmatter":{},"headers":[],"relativePath":"react/tools/babel.md","filePath":"react/tools/babel.md","lastUpdated":null}'),o={name:"react/tools/babel.md"};function r(s,c,l,n,d,p){return a(),t("div")}const m=e(o,[["render",r]]);export{i as __pageData,m as default};
